@@ -3,7 +3,7 @@ tags: [summary, daily, week1, day4]
 date: 2026-07-02
 ---
 # Day 4 Summary
-**Instructor:** Abdullah Khan
+**Instructor:** Instructor
 
 Today focused on structuring enterprise applications, understanding the .NET MVC pattern, managing application memory via Garbage Collection, and identifying performance bottlenecks using diagnostic tools. 
 

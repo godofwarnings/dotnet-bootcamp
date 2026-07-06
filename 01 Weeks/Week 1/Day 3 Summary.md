@@ -4,7 +4,7 @@ tags: [summary, week1, day3]
 # Day 3 Summary
 
 **Date:** 1st July 2026
-**Instructor:** Abdullah Khan
+**Instructor:** Instructor
 
 ## Topics Covered
 - [Design Patterns](../../Concepts/Architecture/Design%20Patterns.md) (Singleton, Repository, Publisher-Subscriber)

@@ -6,7 +6,7 @@ aliases: [Models, Model]
 
 In software architecture (especially when dealing with data access), a **Model** is typically a class that contains only data properties and no business logic or methods. 
 
-> *"A class without stuff, it has only properties. It is called a model." — Instructor Abdullah Khan*
+> *"A class without stuff, it has only properties. It is called a model." — Instructor*
 
 ## Purpose
 Models (sometimes called POCOs in C# — Plain Old CLR Objects) are used to map database tables to C# objects.

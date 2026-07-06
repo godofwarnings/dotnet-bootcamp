@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-// Note: HospitalDbContext is required but was not provided in the snippet.
 // using Microsoft.EntityFrameworkCore;
 
 namespace ConsoleApp6;
@@ -9,13 +8,14 @@ namespace ConsoleApp6;
 // static class because class is the object itself.
 public static class HospitalService
 {
+    
     public static void DisplayAllDoctors()
     {
         try
         {
-            // using HospitalDbContext context = new HospitalDbContext();
-            // List<Doctor> doctors = context.Doctors.ToList();
-            // foreach (Doctor doctor in doctors) { PrintDoctor(doctor); }
+            using HospitalDbContext context = new HospitalDbContext();
+            List<Doctor> doctors = context.Doctors.ToList();
+            foreach (Doctor doctor in doctors) { PrintDoctor(doctor); }
         }
         catch (Exception ex)
         {
@@ -27,9 +27,9 @@ public static class HospitalService
     {
         try
         {
-            // using HospitalDbContext context = new HospitalDbContext();
-            // List<Patient> patients = context.Patients.ToList();
-            // foreach (Patient patient in patients) { PrintPatient(patient); }
+            using HospitalDbContext context = new HospitalDbContext();
+            List<Patient> patients = context.Patients.ToList();
+            foreach (Patient patient in patients) { PrintPatient(patient); }
         }
         catch (Exception ex)
         {
@@ -41,9 +41,9 @@ public static class HospitalService
     {
         try
         {
-            // using HospitalDbContext context = new HospitalDbContext();
-            // List<Appointment> appointments = context.Appointments.ToList();
-            // foreach (Appointment appointment in appointments) { PrintAppointment(appointment); }
+            using HospitalDbContext context = new HospitalDbContext();
+            List<Appointment> appointments = context.Appointments.ToList();
+            foreach (Appointment appointment in appointments) { PrintAppointment(appointment); }
         }
         catch (Exception ex)
         {
@@ -55,9 +55,9 @@ public static class HospitalService
     {
         try
         {
-            // using HospitalDbContext context = new HospitalDbContext();
-            // List<Doctor> availableDoctors = context.Doctors.Where(doc => doc.IsAvailable == true).ToList();
-            // foreach (Doctor doctor in availableDoctors) { PrintDoctor(doctor); }
+            using HospitalDbContext context = new HospitalDbContext();
+            List<Doctor> availableDoctors = context.Doctors.Where(doc => doc.IsAvailable == true).ToList();
+            foreach (Doctor doctor in availableDoctors) { PrintDoctor(doctor); }
         }
         catch (Exception ex)
         {
@@ -69,9 +69,9 @@ public static class HospitalService
     {
         try
         {
-            // using HospitalDbContext context = new HospitalDbContext();
-            // List<Doctor> doctors = context.Doctors.Where(doc => doc.Specialization == specialization).ToList();
-            // foreach (Doctor doctor in doctors) { PrintDoctor(doctor); }
+            using HospitalDbContext context = new HospitalDbContext();
+            List<Doctor> doctors = context.Doctors.Where(doc => doc.Specialization == specialization).ToList();
+            foreach (Doctor doctor in doctors) { PrintDoctor(doctor); }
         }
         catch (Exception ex)
         {
@@ -83,9 +83,9 @@ public static class HospitalService
     {
         try
         {
-            // using HospitalDbContext context = new HospitalDbContext();
-            // List<Patient> patients = context.Patients.Where(p => p.City == city).ToList();
-            // foreach (Patient patient in patients) { PrintPatient(patient); }
+            using HospitalDbContext context = new HospitalDbContext();
+            List<Patient> patients = context.Patients.Where(p => p.City == city).ToList();
+            foreach (Patient patient in patients) { PrintPatient(patient); }
         }
         catch (Exception ex)
         {
@@ -97,10 +97,10 @@ public static class HospitalService
     {
         try
         {
-            // using HospitalDbContext context = new HospitalDbContext();
-            // Doctor? doctor = context.Doctors.FirstOrDefault(doc => doc.DoctorId == id);
-            // if (doctor != null) { Console.WriteLine(); Console.WriteLine("Doctor Found!"); PrintDoctor(doctor); }
-            // else { Console.WriteLine("Doctor with ID {0} not found", id); }
+            using HospitalDbContext context = new HospitalDbContext();
+            Doctor? doctor = context.Doctors.FirstOrDefault(doc => doc.DoctorId == id);
+            if (doctor != null) { Console.WriteLine(); Console.WriteLine("Doctor Found!"); PrintDoctor(doctor); }
+            else { Console.WriteLine("Doctor with ID {0} not found", id); }
         }
         catch (Exception ex)
         {
@@ -112,10 +112,10 @@ public static class HospitalService
     {
         try
         {
-            // using HospitalDbContext context = new HospitalDbContext();
-            // context.Doctors.Add(doctor);
-            // context.SaveChanges();
-            // Console.WriteLine("Doctor inserted Successfully");
+            using HospitalDbContext context = new HospitalDbContext();
+            context.Doctors.Add(doctor);
+            context.SaveChanges();
+            Console.WriteLine("Doctor inserted Successfully");
         }
         catch (Exception ex)
         {
@@ -127,10 +127,10 @@ public static class HospitalService
     {
         try
         {
-            // using HospitalDbContext context = new HospitalDbContext();
-            // context.Patients.Add(patient);
-            // context.SaveChanges();
-            // Console.WriteLine("Patient inserted Successfully");
+            using HospitalDbContext context = new HospitalDbContext();
+            context.Patients.Add(patient);
+            context.SaveChanges();
+            Console.WriteLine("Patient inserted Successfully");
         }
         catch (Exception ex)
         {
@@ -142,10 +142,10 @@ public static class HospitalService
     {
         try
         {
-            // using HospitalDbContext context = new HospitalDbContext();
-            // Doctor? doctor = context.Doctors.FirstOrDefault(doc => doc.DoctorId == id);
-            // if (doctor != null) { Console.WriteLine(); Console.WriteLine("Doctor Found!"); doctor.ConsultationFee = fee; context.SaveChanges(); PrintDoctor(doctor); }
-            // else { Console.WriteLine("Doctor with ID {0} not found", id); }
+            using HospitalDbContext context = new HospitalDbContext();
+            Doctor? doctor = context.Doctors.FirstOrDefault(doc => doc.DoctorId == id);
+            if (doctor != null) { Console.WriteLine(); Console.WriteLine("Doctor Found!"); doctor.ConsultationFee = fee; context.SaveChanges(); PrintDoctor(doctor); }
+            else { Console.WriteLine("Doctor with ID {0} not found", id); }
         }
         catch (Exception ex)
         {
@@ -157,10 +157,10 @@ public static class HospitalService
     {
         try
         {
-            // using HospitalDbContext context = new HospitalDbContext();
-            // Doctor? doctor = context.Doctors.FirstOrDefault(doc => doc.DoctorId == id);
-            // if (doctor != null) { Console.WriteLine(); Console.WriteLine("Doctor Found!"); if (doctor.IsAvailable == false) { Console.WriteLine("Doctor is already unavailable."); } else { doctor.IsAvailable = false; context.SaveChanges(); PrintDoctor(doctor); } }
-            // else { Console.WriteLine("Doctor with ID {0} not found", id); }
+            using HospitalDbContext context = new HospitalDbContext();
+            Doctor? doctor = context.Doctors.FirstOrDefault(doc => doc.DoctorId == id);
+            if (doctor != null) { Console.WriteLine(); Console.WriteLine("Doctor Found!"); if (doctor.IsAvailable == false) { Console.WriteLine("Doctor is already unavailable."); } else { doctor.IsAvailable = false; context.SaveChanges(); PrintDoctor(doctor); } }
+            else { Console.WriteLine("Doctor with ID {0} not found", id); }
         }
         catch (Exception ex)
         {
@@ -172,10 +172,10 @@ public static class HospitalService
     {
         try
         {
-            // using HospitalDbContext context = new HospitalDbContext();
-            // Patient? patient = context.Patients.FirstOrDefault(p => p.PatientId == id);
-            // if (patient != null) { Console.WriteLine(); Console.WriteLine("Patient Found!"); patient.City = city; context.SaveChanges(); PrintPatient(patient); }
-            // else { Console.WriteLine("Patient with ID {0} not found", id); }
+            using HospitalDbContext context = new HospitalDbContext();
+            Patient? patient = context.Patients.FirstOrDefault(p => p.PatientId == id);
+            if (patient != null) { Console.WriteLine(); Console.WriteLine("Patient Found!"); patient.City = city; context.SaveChanges(); PrintPatient(patient); }
+            else { Console.WriteLine("Patient with ID {0} not found", id); }
         }
         catch (Exception ex)
         {
@@ -187,14 +187,14 @@ public static class HospitalService
     {
         try
         {
-            // using HospitalDbContext context = new HospitalDbContext();
-            // Patient? patient = context.Patients.Find(id);
-            // if (patient == null) { Console.WriteLine("Patient not found."); return; }
-            // bool hasScheduledAppointment = context.Appointments.Any(a => a.PatientId == id && a.Status == "Scheduled");
-            // if (hasScheduledAppointment) { Console.WriteLine("Patient has a scheduled appointment and cannot be deleted."); return; }
-            // context.Patients.Remove(patient);
-            // context.SaveChanges();
-            // Console.WriteLine("Patient removed successfully.");
+            using HospitalDbContext context = new HospitalDbContext();
+            Patient? patient = context.Patients.Find(id);
+            if (patient == null) { Console.WriteLine("Patient not found."); return; }
+            bool hasScheduledAppointment = context.Appointments.Any(a => a.PatientId == id && a.Status == "Scheduled");
+            if (hasScheduledAppointment) { Console.WriteLine("Patient has a scheduled appointment and cannot be deleted."); return; }
+            context.Patients.Remove(patient);
+            context.SaveChanges();
+            Console.WriteLine("Patient removed successfully.");
         }
         catch (Exception ex)
         {

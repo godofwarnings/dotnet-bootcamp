@@ -4,7 +4,7 @@ tags: [summary, week1, day2]
 # Day 2 Summary
 
 **Date:** 30th June 2026
-**Instructor:** Abdullah Khan
+**Instructor:** Instructor
 
 ## Topics Covered
 - [Properties and Backing Fields](../../Concepts/C%23/Properties%20and%20Backing%20Fields.md) (Encapsulation, auto-properties vs backing fields)

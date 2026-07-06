@@ -34,3 +34,21 @@ python3 Scripts/convert_links.py --mode md2obs --dir .
 ```bash
 python3 Scripts/convert_links.py --mode obs2md --dir .
 ```
+
+
+
+https://www.reddit.com/r/programming/comments/y3cvw8/solid_principles_sketches/
+
+https://www.reddit.com/r/programming/comments/y3cvw8/solid_principles_sketches/
+
+
+https://www.reddit.com/r/explainlikeimfive/comments/3dwjy3/eli5solid_design_principle/
+
+
+https://www.reddit.com/r/learnprogramming/comments/cr3m01/solid_design_principles_for_everyone/
+
+https://www.reddit.com/r/softwarearchitecture/comments/1qjxzgn/solid_principles_explained_for_modern_developers/
+
+
+https://www.reddit.com/r/softwarearchitecture/comments/1r6aglp/solid_confused_me_until_i_found_out_the_truth/
+

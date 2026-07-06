@@ -62,3 +62,9 @@ public IActionResult Index()
 <h1>@ViewBag.Message</h1>
 <h2>@ViewBag.MyName</h2>
 ```
+
+## Visual Studio Scaffolding Quirks
+When you create a model like `Customer.cs` and use the Visual Studio scaffolding tool to automatically generate a Controller and Views using Entity Framework, the tool automatically pluralizes the names.
+- It will generate a `CustomersController`.
+- The views folder will be named `Customers`.
+- If you attempt to rename the controller to `CustomerController` or the view folder to `Customer` manually without updating the routing rules and all associated view references, you will likely encounter HTTP 404 (Not Found) errors when accessing `/customer`.

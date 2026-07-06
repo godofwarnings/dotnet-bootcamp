@@ -4,7 +4,7 @@ tags: [summary, week1, day1]
 # Day 1 Summary
 
 **Date:** 29th June 2026
-**Instructor:** Abdullah Khan
+**Instructor:** Instructor
 
 ## Topics Covered
 - [Software Application Layers](../../Concepts/Architecture/Software%20Application%20Layers.md) (UI, API, DB)

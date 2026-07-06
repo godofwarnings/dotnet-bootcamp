@@ -8,7 +8,7 @@ Welcome to the .NET Bootcamp Engineering Knowledge Base. This vault serves as a 
 
 ## Weekly Summaries
 - [Week 1: Advanced Backend Foundations](../01%20Weeks/Week%201/Week%201%20Summary.md)
-- Week 2: Enterprise APIs & AI-Assisted Debugging *(Upcoming)*
+- [Week 2: Enterprise APIs & AI-Assisted Debugging](../01%20Weeks/Week%202/Week%202%20Summary.md)
 - Week 3: Microservices, Cloud & DevOps *(Upcoming)*
 - Week 4: Capstone Engineering *(Upcoming)*
 - Week 5: AI-Assisted Development *(Upcoming)*
@@ -19,6 +19,9 @@ Welcome to the .NET Bootcamp Engineering Knowledge Base. This vault serves as a 
   - [Software Application Layers](../Concepts/Architecture/Software%20Application%20Layers.md)
   - [Design Patterns](../Concepts/Architecture/Design%20Patterns.md)
   - [Models](../Concepts/Architecture/Models.md)
+  - [Authentication vs Authorization](../Concepts/Architecture/Authentication%20vs%20Authorization.md)
+  - [Caching and CDN](../Concepts/Architecture/Caching%20and%20CDN.md)
+  - [System Design - Hospital](../Concepts/Architecture/System%20Design%20-%20Hospital.md)
 - **C# Core Concepts**
   - [Classes and Objects](../Concepts/C%23/Classes%20and%20Objects.md)
   - [Properties and Backing Fields](../Concepts/C%23/Properties%20and%20Backing%20Fields.md)
@@ -39,6 +42,14 @@ Welcome to the .NET Bootcamp Engineering Knowledge Base. This vault serves as a 
   - [ADO.NET Basics](../Concepts/Database/ADO.NET%20Basics.md)
   - [Dapper Basics](../Concepts/Database/Dapper%20Basics.md)
   - [Entity Framework Core](../Concepts/Database/Entity%20Framework%20Core.md)
+  - [EF Core Migrations](../Concepts/Database/EF%20Core%20Migrations.md)
+  - [EF Core Data Annotations](../Concepts/Database/EF%20Core%20Data%20Annotations.md)
+  - [EF Core Relationships](../Concepts/Database/EF%20Core%20Relationships.md)
+  - [Database Design Best Practices](../Concepts/Database/Database%20Design%20Best%20Practices.md)
+  - [Race Conditions and Locking](../Concepts/Database/Race%20Conditions%20and%20Locking.md)
+- **Web Development**
+  - [ASP.NET Core MVC](../Concepts/Web%20Development/ASP.NET%20Core%20MVC.md)
+  - [HTTP APIs](../Concepts/Web%20Development/HTTP%20APIs.md)
 
 ## System Resources
 - [Global Glossary](../Glossary/Global%20Glossary.md)

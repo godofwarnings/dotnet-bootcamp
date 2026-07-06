@@ -9,6 +9,10 @@ This document tracks topics that have been introduced but require deeper study, 
 - **Layered Code Distribution:** How does one arrive at the layered code distribution? What is the step-by-step thought process when refactoring a monolith into layers?
 - **Data Transfer Objects (DTO):** What exactly is a DTO in simple terms and why do we need it alongside normal Models?
 - **ADO.NET vs Dapper vs EF Core:** When exactly should you use each one in a real-world enterprise project?
+- **EF Core Migrations Up/Down:** How exactly do the Up and Down methods work, and how do we write custom migrations?
+- **EF Core Relationships:** How do 1:1, 1:Many, and Many:Many relations map to actual foreign keys and join tables under the hood?
+- **Visual Studio Pluralization:** Why does scaffolding automatically create `CustomersController` and `/customers` for a singular `Customer` model?
+- **Database Basics Revision:** Review ER diagrams, schema design, and normalization (1NF, 2NF, 3NF).
 
 ## Medium Priority
 - **Primary Constructors:** What are the benefits of primary constructors vs traditional constructors?
@@ -25,6 +29,7 @@ This document tracks topics that have been introduced but require deeper study, 
 - **Active References:** How does the runtime track what objects are still in use?
 
 ## Low Priority / Side Topics
+- **DSA in C#:** Need to learn basic C# syntax to take input, sorting, etc. to do basic DSA smoothly.
 - **Google Location Tracking:** Does Google track location without it being enabled (EU regulations context)?
 - **Palantir:** What is their primary goal and business model?
 - **DeepMind AI Parkour:** Context on AI physical simulations.
