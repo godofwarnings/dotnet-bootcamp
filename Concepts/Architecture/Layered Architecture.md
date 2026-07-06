@@ -10,9 +10,9 @@ When all logic (UI, validation, business rules, data access) is stuffed into a s
 
 ## Layered Approach (The Solution)
 By breaking the code down, we achieve a separation of concerns:
-1. **Models / Entities**: Define the structure of the data (e.g., [Course.cs](../../Code%20Examples/Day%204%20-%20Layered%20Architecture/Course.cs), [Student.cs](../../Code%20Examples/Day%204%20-%20Layered%20Architecture/Student.cs), [Admission.cs](../../Code%20Examples/Day%204%20-%20Layered%20Architecture/Admission.cs)).
-2. **Data Transfer Objects (DTOs)**: Define the shape of data coming in or going out (e.g., [AdmissionRequest.cs](../../Code%20Examples/Day%204%20-%20Layered%20Architecture/AdmissionRequest.cs)).
-3. **Repositories**: Handle data storage and retrieval (e.g., [CourseRepository.cs](../../Code%20Examples/Day%204%20-%20Layered%20Architecture/CourseRepository.cs), [AdmissionRepository.cs](../../Code%20Examples/Day%204%20-%20Layered%20Architecture/AdmissionRepository.cs)).
-4. **Services**: Handle the core business logic and coordinate between validators, repositories, and other services (e.g., [AdmissionService.cs](../../Code%20Examples/Day%204%20-%20Layered%20Architecture/AdmissionService.cs)).
+1. **Models / Entities**: Define the structure of the data (e.g., `Course`, `Student`, `Admission` in [AdmissionService.cs](../../Code%20Examples/Day%204%20-%20Layered%20Architecture/AdmissionService.cs)).
+2. **Data Transfer Objects (DTOs)**: Define the shape of data coming in or going out (e.g., `AdmissionRequest` in [AdmissionService.cs](../../Code%20Examples/Day%204%20-%20Layered%20Architecture/AdmissionService.cs)).
+3. **Repositories**: Handle data storage and retrieval (e.g., `CourseRepository`, `AdmissionRepository` in [AdmissionService.cs](../../Code%20Examples/Day%204%20-%20Layered%20Architecture/AdmissionService.cs)).
+4. **Services**: Handle the core business logic and coordinate between validators, repositories, and other services (e.g., `AdmissionService` in [AdmissionService.cs](../../Code%20Examples/Day%204%20-%20Layered%20Architecture/AdmissionService.cs)).
 
 By following a "Model-first approach", you define your domain entities and then build the repositories and services around them.

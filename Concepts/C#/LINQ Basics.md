@@ -10,7 +10,7 @@ It makes data filtering and aggregation much cleaner than using manual `foreach`
 
 ## Common LINQ Methods
 
-See [Program.cs](../../DONE/Program.cs) (RunProductExamples) for the concrete implementation.
+See [Day1_Program.cs](../../Code%20Examples/Day%201%20-%20OOP/Day1_Program.cs) (RunProductExamples) for the concrete implementation.
 
 ### Filtering with `.Where()`
 Filters a collection based on a condition (a predicate).

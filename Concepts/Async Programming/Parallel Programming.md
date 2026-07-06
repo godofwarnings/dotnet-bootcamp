@@ -6,7 +6,7 @@ aliases: [Parallel, Parallel.For, Parallel.ForEach, lock]
 
 While `async`/`await` is meant for I/O-bound waits (non-blocking), **Parallel Programming** is used for **CPU-bound** work where you actually want to use multiple threads simultaneously to crunch data faster.
 
-See [Program.cs](../../DONE/Program.cs) for concrete implementations.
+See [ParallelDemo.cs](../../Code%20Examples/Day%202%20-%20Async/ParallelDemo.cs) for concrete implementations.
 
 ## The `Parallel` Class
 

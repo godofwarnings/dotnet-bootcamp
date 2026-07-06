@@ -9,6 +9,9 @@ Asynchronous programming (`async`/`await`) allows your program to start an opera
 ## What `async` Really Means
 A common misunderstanding is that "async means run on another thread." This is **not** what async means.
 
+**Question (from chat):** If multiple tasks were spawned by `Task.WhenAll`, wouldn't synchronous `Thread.Sleep` and async be basically the same, since that new thread is doing no extra work anyway?
+**Answer:** No.
+
 `async` means:
 - This method may pause at `await`.
 - Control can return to the caller.

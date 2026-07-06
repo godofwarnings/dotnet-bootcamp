@@ -45,8 +45,8 @@ public class InvalidProductException : Exception
 ```
 
 ## Code Examples
-- **Custom Exception Definition:** See `InsufficientStockException` inside [Product.cs](../../DONE/Product.cs).
-- **Multiple Catch Blocks:** See `RunUserInputExample` inside [Program.cs](../../DONE/Program.cs) for catching `FormatException` before `Exception`.
+- **Custom Exception Definition:** See `InsufficientStockException` inside [Product.cs](../../Code%20Examples/Day%201%20-%20OOP/Product.cs).
+- **Multiple Catch Blocks:** See `RunUserInputExample` inside [Day1_Program.cs](../../Code%20Examples/Day%201%20-%20OOP/Day1_Program.cs) for catching `FormatException` before `Exception`.
 
 ## Root Cause Analysis (RCA)
 When exceptions occur in production, developers perform RCA to identify the underlying issue. Good exception handling (like logging the stack trace and inner exceptions) is critical for effective RCA.

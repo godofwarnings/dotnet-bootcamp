@@ -1,9 +1,76 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace ConsoleApp7
 {
-    // Note: AdmissionValidator and DateFormatter classes were not provided in the snippet,
-    // so this class expects them to exist in the same namespace.
+    public class Course
+    {
+        public string CourseName { get; set; } = string.Empty;
+        public int AvailableSeats { get; set; }
+    }
+
+    public class Student
+    {
+        public string StudentName { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+    }
+
+    public class AdmissionRequest
+    {
+        public string StudentName { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public string CourseName {  get; set; } = string.Empty;
+    }
+
+    internal class Admission
+    {
+        public Student Student = new Student();
+        public Course Course = new Course();
+        public DateTime AdmissionDate { get; set; }
+    }
+
+    public class CourseRepository
+    {
+        private readonly List<Course> _courses =
+        [
+            new Course { CourseName = "C#", AvailableSeats = 2 },
+            new Course { CourseName = "SQL", AvailableSeats = 0 },
+            new Course { CourseName = "EF Core", AvailableSeats = 3 }
+        ];
+
+        public Course? GetCourseByName(string courseName) =>
+            _courses.FirstOrDefault(c => c.CourseName.Equals(courseName, StringComparison.OrdinalIgnoreCase));
+
+        public void ReduceSeat(Course course)
+        {
+            if (course.AvailableSeats > 0)
+            {
+                course.AvailableSeats--;
+            }
+        }
+    }
+
+    public class AdmissionRepository
+    {
+        public List<Admission> admissions = new List<Admission>();
+
+        public void SaveAdmission(Admission admission)
+        {
+            admissions.Add(admission);
+        }
+    }
+
+    // Mock DateFormatter for compilation
+    public class DateFormatter {
+        public string Format(DateTime date) => date.ToString();
+    }
+
+    // Mock Validator for compilation
+    public class AdmissionValidator {
+        public string? Validate(AdmissionRequest req) => null;
+    }
+
     public class AdmissionService
     {
         private readonly AdmissionValidator validator;
@@ -57,7 +124,6 @@ namespace ConsoleApp7
             };
 
             courseRepository.ReduceSeat(course);
-
             admissionRepository.SaveAdmission(admission);
 
             Console.WriteLine("Admission successful.");
@@ -66,16 +132,5 @@ namespace ConsoleApp7
             Console.WriteLine($"Course: {admission.Course.CourseName}");
             Console.WriteLine($"Admission Date: {dateFormatter.Format(admission.AdmissionDate)}");
         }
-    }
-
-    // Dummy classes added so code compiles conceptually.
-    public class AdmissionValidator
-    {
-        public string? Validate(AdmissionRequest request) => null;
-    }
-
-    public class DateFormatter
-    {
-        public string Format(DateTime date) => date.ToString("yyyy-MM-dd");
     }
 }
