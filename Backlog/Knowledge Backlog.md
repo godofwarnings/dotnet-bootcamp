@@ -13,6 +13,10 @@ This document tracks topics that have been introduced but require deeper study, 
 - **EF Core Relationships:** How do 1:1, 1:Many, and Many:Many relations map to actual foreign keys and join tables under the hood?
 - **Visual Studio Pluralization:** Why does scaffolding automatically create `CustomersController` and `/customers` for a singular `Customer` model?
 - **Database Basics Revision:** Review ER diagrams, schema design, and normalization (1NF, 2NF, 3NF).
+- **OpenAPI Support:** What does OpenAPI support do in a Web API project?
+- **Polly for Resilience:** How to implement Circuit Breaker, Timeout, and Retry using the Polly library instead of manual while loops.
+- **Circuit Breaker Code Examples:** Create practical code examples showing the Open, Closed, and Half-Open states.
+- **API Versioning:** How to properly structure multiple versions of a Web API endpoint.
 
 ## Medium Priority
 - **Primary Constructors:** What are the benefits of primary constructors vs traditional constructors?
