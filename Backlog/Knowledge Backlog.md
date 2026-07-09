@@ -7,7 +7,7 @@ This document tracks topics that have been introduced but require deeper study, 
 
 ## High Priority
 - **Layered Code Distribution:** How does one arrive at the layered code distribution? What is the step-by-step thought process when refactoring a monolith into layers?
-- **Data Transfer Objects (DTO):** What exactly is a DTO in simple terms and why do we need it alongside normal Models?
+- [x] **Data Transfer Objects (DTO):** What exactly is a DTO in simple terms and why do we need it alongside normal Models?
 - **ADO.NET vs Dapper vs EF Core:** When exactly should you use each one in a real-world enterprise project?
 - **EF Core Migrations Up/Down:** How exactly do the Up and Down methods work, and how do we write custom migrations?
 - **EF Core Relationships:** How do 1:1, 1:Many, and Many:Many relations map to actual foreign keys and join tables under the hood?

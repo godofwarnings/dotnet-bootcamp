@@ -56,7 +56,19 @@ Do **not** resolve a scoped service directly from a singleton, because that effe
 > **The Middleware Constructor Anti-Pattern**
 > In ASP.NET Core, standard middleware is created once per application lifetime (effectively acting as a Singleton). If you inject a **Scoped** service into the constructor of a middleware, it will be captured and behave like a singleton for the rest of the application's life. This is a classic "Lifecycle Mismatch" error.
 > 
-> **The Fix:** Inject scoped services into the `InvokeAsync` method instead of the constructor, so they are resolved per HTTP request.
+>## Testing with Postman (Scoped vs Singleton)
+>
+>When testing APIs using tools like Postman, it is highly important to understand how DI scopes behave:
+>- **`AddScoped`**: Creates a new instance per HTTP request. In Postman, every time you hit "Send", it is treated as a completely new request (and conceptually a new client connection). Thus, any in-memory state stored in a Scoped service will be **destroyed and recreated** between Postman requests.
+>- **`AddSingleton`**: Creates a single instance that lives for the entire lifetime of the application. 
+>
+>**Example**: In an in-memory Idempotency feature (like generating certificates where you check an `Idempotency-Key` header), if the `CertificateService` is registered as `AddScoped`, the sequence resets every time you click Send in Postman, causing it to generate new certificates instead of returning the cached duplicate. Switching to `AddSingleton` ensures the dictionary holding the idempotency keys persists across multiple Postman calls.
+>
+>---
+>
+>## 2) The Solution
+>
+>Inject the scoped dependency into the `InvokeAsync` method instead. This tells ASP.NET Core to resolve the scoped service from the current request's scope.
 
 ## 4. EF Core with Dependency Injection
 
