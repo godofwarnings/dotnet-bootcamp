@@ -9,7 +9,7 @@ Welcome to the .NET Bootcamp Engineering Knowledge Base. This vault serves as a 
 ## Weekly Summaries
 - [Week 1: Advanced Backend Foundations](../01%20Weeks/Week%201/Week%201%20Summary.md)
 - [Week 2: Enterprise APIs & AI-Assisted Debugging](../01%20Weeks/Week%202/Week%202%20Summary.md)
-- Week 3: Microservices, Cloud & DevOps *(Upcoming)*
+- [Week 3: Microservices, Cloud & DevOps](../01%20Weeks/Week%203/Week%203%20Summary.md)
 - Week 4: Capstone Engineering *(Upcoming)*
 - Week 5: AI-Assisted Development *(Upcoming)*
 - Week 6: Agentic AI *(Upcoming)*
@@ -22,6 +22,10 @@ Welcome to the .NET Bootcamp Engineering Knowledge Base. This vault serves as a 
   - [Authentication vs Authorization](../Concepts/Architecture/Authentication%20vs%20Authorization.md)
   - [Caching and CDN](../Concepts/Architecture/Caching%20and%20CDN.md)
   - [System Design - Hospital](../Concepts/Architecture/System%20Design%20-%20Hospital.md)
+  - [Service Boundaries](../Concepts/Architecture/Service%20Boundaries.md)
+  - [Pub-Sub Pattern](../Concepts/Architecture/Pub-Sub%20Pattern.md)
+  - [Anti-Corruption Layer (ACL)](../Concepts/Architecture/Anti-Corruption%20Layer%20%28ACL%29.md)
+  - [Sync vs Async Operations](../Concepts/Architecture/Sync%20vs%20Async%20Operations.md)
 - **C# Core Concepts**
   - [Classes and Objects](../Concepts/C%23/Classes%20and%20Objects.md)
   - [Properties and Backing Fields](../Concepts/C%23/Properties%20and%20Backing%20Fields.md)
@@ -52,6 +56,7 @@ Welcome to the .NET Bootcamp Engineering Knowledge Base. This vault serves as a 
   - [HTTP APIs](../Concepts/Web%20Development/HTTP%20APIs.md)
 
 ## System Resources
-- [Global Glossary](../Glossary/Global%20Glossary.md)
+- [Glossary](Glossary.md)
+- [Prompt Library](Prompt%20Library.md)
 - [Knowledge Backlog](../Backlog/Knowledge%20Backlog.md)
 - Code Examples Folder (`/Code Examples`)

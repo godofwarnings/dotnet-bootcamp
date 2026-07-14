@@ -25,6 +25,12 @@ Today was a massive deep-dive into advanced API Resilience, Middleware Lifetimes
 6. **Enroll Student Feature:**
    - Implemented a standard many-to-many relationship using a Model + DTO approach. [Enroll Student in Course](../../Code%20Examples/Day%208%20-%20AI%20Assisted%20API/Enroll%20Student%20in%20Course.md)
 
+7. **Static Files & Frontend Hosting:**
+   - Learned how to host frontend HTML files directly from the Web API by creating a `wwwroot` folder and enabling `app.UseStaticFiles()` and `app.UseDefaultFiles()` in `Program.cs`. [Static Files](../../Concepts/Web%20API/Static%20Files.md)
+
+8. **Dependency Injection (Postman Gotcha):**
+   - Discovered a critical issue where using Postman counts as a new client per request. If an in-memory state (like idempotency keys) is registered as `AddScoped`, it resets every time you hit Send. Using `AddSingleton` fixes this issue by preserving the state across multiple Postman calls. [Dependency Injection](../../Concepts/Web%20API/Dependency%20Injection.md)
+
 ## Next Steps
 - Implement Polly to replace the manual `while` loops for resilience.
 - Explore API Versioning.
