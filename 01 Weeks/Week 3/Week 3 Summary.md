@@ -5,6 +5,7 @@ This note summarizes learning from Week 3 of the .NET Bootcamp.
 ## Daily Summaries
 - [Day 11 Summary (Training Enrollment & Testing)](Day%2011%20Summary.md)
 - [Day 12 Summary (Clean Architecture, Service Boundaries, and Pub/Sub)](Day%2012%20Summary.md)
+- [Day 13 Summary (Microservices, Angular & Food Ordering Patches)](Day%2013%20Summary.md)
 
 ## Key Concepts Mastered
 - **Testing & Verification**: 
