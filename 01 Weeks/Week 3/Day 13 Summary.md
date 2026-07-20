@@ -51,3 +51,13 @@ The initial `InMemoryEventBus` implementation had a captive dependency bug becau
 A complete manual test suite was documented for the Food Ordering API via Swagger UI. It covers happy paths, validation errors, Not Found (404), Business Conflicts (409), and verifies Idempotency using the `Idempotency-Key` header.
 
 *(See Code Examples for the full test suite json data).*
+
+---
+
+## Code Examples
+- [Microservices Architecture](../../Code%20Examples/Day%2013%20-%20Microservices%20and%20Angular/01%20-%20Microservices%20Architecture.md)
+- [Angular Template Concepts](../../Code%20Examples/Day%2013%20-%20Microservices%20and%20Angular/02%20-%20Angular%20Template%20Concepts.md)
+- [Angular Component Communication](../../Code%20Examples/Day%2013%20-%20Microservices%20and%20Angular/03%20-%20Angular%20Component%20Communication.md)
+- [Angular Registration Preview](../../Code%20Examples/Day%2013%20-%20Microservices%20and%20Angular/04%20-%20Angular%20Registration%20Preview.md)
+- [InMemoryEventBus Fix](../../Code%20Examples/Day%2013%20-%20Microservices%20and%20Angular/05%20-%20InMemoryEventBus%20Fix.md)
+- [Food Ordering API Swagger Test Cases](../../Code%20Examples/Day%2013%20-%20Microservices%20and%20Angular/06%20-%20Food%20Ordering%20API%20Swagger%20Test%20Cases.md)
